@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Page d'accueil</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Bienvenue</h1>
+
+    <p class="importante"> Ce site permet à l'apprenant de se perfectionner dans des matières à l'aide d'exercices suivis d'une correction.</p>
+    <p>Pour l'instant, il n'y a que des exercices avec corrections de niveau seconde.</p>
+
+    <h1>Matières</h1>
+    <ul>
+        <li>Physique-chimie</li>
+        <li>Maths</li>
+        <li>SVT</li>
+        <li>Français</li>
+        <li>Anglais</li>
+        <li>Philosophie</li>
+        <li>Histoire-géographie</li>
+        <li>EPS</li>
+    </ul>
+    
+    <p>Pour info, certaines matières sont inachevées.</p>
+
+    <h1>Aller au menu principal pour pouvoir télécharger, visionner ou visiter le site</h1>
+    <ul>
+        <li><a href="menu.html" class="bouton">Aller au menu principal</a></li>
+    </ul>
+
+    <h1>Nous contacter</h1>
+    
+    <form action="/envoyer" method="post">
+        <fieldset>
+            <legend>Formulaire de contact</legend>
+
+            <div>
+                <label for="emailinput">Votre email</label>
+                <input type="email" name="email" id="emailinput" required>
+            </div>
+
+            <div>
+                <label for="nameinput">Votre nom</label>
+                <input type="text" name="first_name" id="nameinput" required>
+            </div>
+
+            <div>
+                <label for="passwordinput">Votre mot de passe</label>
+                <input type="password" name="password" id="passwordinput" required>
+                <input type="checkbox" id="showpassword">
+                <label for="showpassword">Afficher le mot de passe</label>
+            </div>
+
+            <div>
+                <p>Vous êtes :</p>
+                <!-- FIX : Utilisation de "for" au lieu de "id" pour le label -->
+                <label for="sexeinput">Sexe :</label>
+                <select name="sexe" id="sexeinput">
+                    <option value="m">Masculin</option>
+                    <option value="f">Féminin</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+            </div>
+
+            <div>
+                <label for="fileinput">Joindre un fichier</label>
+                <input type="file" name="piece_jointe" id="fileinput">
+            </div>
+
+            <div>
+                <input type="checkbox" name="conditions" id="conditionsinput" required>
+                <label for="conditionsinput">J'accepte les conditions d'utilisation</label>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

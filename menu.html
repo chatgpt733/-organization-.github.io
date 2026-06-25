@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="img/Gemini_Generated_Image_q23db4q23db4q23d.png" alt="Aperçu d'un élève" width="400" height="300">
+    
+    <p class="importante">Ce site permet à l'apprenant de se perfectionner dans des matières à l'aide d'exercices suivis d'une correction.</p>
+    
+    <h1>Accéder</h1>
+    <ul>
+        <li><a href="matieres/physique/physique.html">Physique</a></li>
+        <li><a href="matieres/chimie/chimie.html">Chimie</a></li>
+        <li><a href="matieres/math/math.html">Maths</a></li>
+        <li><a href="matieres/francais/francais.html">Français</a></li>
+        <li><a href="matieres/anglais/anglais.html">Anglais</a></li>
+        <li><a href="matieres/philosophie/philosophie.html">Philosophie</a></li>
+        <li><a href="matieres/histoire-geographie/histoiregeographie.html">Histoire-géographie</a></li>
+        <li><a href="matieres/eps/eps.html">EPS</a></li>
+    </ul> 
+    
+    <div style="margin-top: 30px;">
+        <a href="index.html" class="bouton">Revenir à la page d'accueil</a>
+    </div>
+
+    <h1>Nous contacter</h1>
+
+    <form action="/envoyer" method="post">
+        <fieldset>
+            <legend>Nous contacter</legend>
+
+            <div>
+                <label for="emailinput">Votre email</label>
+                <input type="email" name="email" id="emailinput" required>
+            </div>
+
+            <div>
+                <label for="nameinput">Votre nom</label>
+                <input type="text" name="first_name" id="nameinput" required>
+            </div>
+
+            <div>
+                <label for="passwordinput">Votre mot de passe</label>
+                <input type="password" name="password" id="passwordinput" required>
+                <div style="margin-top: 5px;">
+                    <input type="checkbox" id="showpassword">
+                    <label for="showpassword">Afficher le mot de passe</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="sexeinput">Vous êtes :</label>
+                <select name="sexe" id="sexeinput">
+                    <option value="m">Masculin</option>
+                    <option value="f">Féminin</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+            </div>
+
+            <div>
+                <label for="fileinput">Joindre un fichier</label>
+                <input type="file" name="piece_jointe" id="fileinput">
+            </div>
+
+            <div>
+                <input type="checkbox" name="conditions" id="conditionsinput" required>
+                <label for="conditionsinput">J'accepte les conditions d'utilisation</label>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

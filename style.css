@@ -1,0 +1,112 @@
+/* ===================================================
+   POLICE
+   =================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+/* ===================================================
+   BASE GÉNÉRALE
+   =================================================== */
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: #fdf8ee;
+    color: #2b2b2b;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2 {
+    font-family: "Fredoka", sans-serif;
+    color: #1f5f4f;
+}
+
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 4px solid #f4a826;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 36px;
+}
+
+p {
+    color: #3f3f3f;
+}
+
+/* ===================================================
+   LISTE DES MATIÈRES
+   =================================================== */
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+li {
+    background-color: #ffffff;
+    border: 2px solid #1f5f4f;
+    border-radius: 10px;
+    padding: 14px 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #1f5f4f;
+}
+
+/* quand la liste contient des liens (page menu), on enlève
+   le style de texte par défaut du lien pour qu'il prenne
+   toute la place de la case */
+li a {
+    color: #1f5f4f;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover {
+    background-color: #1f5f4f;
+    color: #ffffff;
+}
+
+li:hover a {
+    color: #ffffff;
+}
+
+/* ===================================================
+   BOUTONS DE NAVIGATION (classe .bouton)
+   =================================================== */
+.bouton {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 26px;
+    background-color: #f4a826;
+    color: #2b2b2b;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 999px;
+}
+
+.bouton:hover {
+    background-color: #1f5f4f;
+    color: #ffffff;
+}
+
+/* ===================================================
+   RESPONSIVE : écrans étroits (téléphones)
+   =================================================== */
+@media (max-width: 480px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
